@@ -399,10 +399,94 @@ header {
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
   h1{
-
     font-weight: 800;
     font-size: 46px;
     line-height: 56px;
     letter-spacing: 0.01em;
   }
+
+  .wrapper {
+    max-inline-size: 100%;
+    margin: auto;
+  }
+  .main-content {
+    /* padding-block-start: 60px; */
+    /* margin: 16px; */
+    /* padding-inline: 16px; */
+    position: relative;
+  }
+  /* Menu */
+  .header-menu{
+  display: block;
+  }
+  .header-icon{
+  display: none;
+
+  }
+  /* Fin de Menu */
+
+  /* presentation */
+  .presentation{
+    /* display: flex; */
+
+  }
+  .presentation-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-block: 25px;
+    padding-inline: 1em;
+    align-items: flex-start;
+    background: url("../img/background.png") no-repeat center center fixed;
+
+    padding-block-end: 300px;
+    padding-block-start: 150px;
+    padding-inline-start: 400px;
+  }
+  .presentation-content p{
+    margin-block: 1em;
+  }
+  /* Fin de presentation */
+
+  /* brands */
+  .brands{
+    padding-inline: 10px;
+    padding-block-start: 15px;
+    padding-block-end: 45px;
+  }
+  .group-img-brands{
+    margin-inline: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-inline-start: 150px;
+  }
+  .group-img-brands img{
+    height: 70px;
+  }
+  /* Fin de brands */
+
+
+
+
+  /* celular */
+  .main-content{
+
+  }
+  .celular{
+    bottom: 40px;
+    left: 5%;
+  }
+  .celular img{
+    height: 570px;
+  }
+  .gif-video{
+    bottom: 120px;
+    left: 8%;
+    /* left: 100px; */
+  }
+  .gif-video img{
+    height: 405px;
+    width: 230px;
+    object-position: -230px 100%; }
+  /* Fin de celular */
 }
