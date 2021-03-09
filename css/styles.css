@@ -345,7 +345,7 @@ header {
 .footer-content{
   margin-inline: 2em;
   padding-block-start: 100px;
-  padding-block-end: 100px;
+  padding-block-end: 400px;
 
 }
 .footer-social p{
@@ -364,6 +364,36 @@ header {
   margin-block-start:1em;
 }
 /* Fin de footer  */
+/* celular */
+.main-content{
+  position: relative;
+
+}
+.celular{
+  position: fixed;
+  z-index: 2;
+  bottom: -50px;
+  left: 80px;
+}
+.celular img{
+  height: 380px;
+}
+.gif-video{
+  position: fixed;
+  z-index: 2;
+  bottom: -50px;
+  left: 100px;
+}
+.gif-video img{
+  height: 325px;
+  width: 160px;
+  object-fit: cover;
+  object-position: -230px 100%;
+  /* object-fit: contain; */
+  /* https://www.w3schools.com/css/css3_object-fit.asp */
+}
+/* Fin de celular */
+
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
