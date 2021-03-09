@@ -345,7 +345,7 @@ header {
 .footer-content{
   margin-inline: 2em;
   padding-block-start: 100px;
-  padding-block-end: 400px;
+  padding-block-end: 370px;
 
 }
 .footer-social p{
@@ -373,20 +373,21 @@ header {
   position: fixed;
   z-index: 2;
   bottom: -50px;
-  left: 80px;
+  left: 25%;
 }
 .celular img{
-  height: 380px;
+  height: 420px;
 }
 .gif-video{
   position: fixed;
   z-index: 2;
   bottom: -50px;
-  left: 100px;
+  left: 32%;
+  /* left: 100px; */
 }
 .gif-video img{
-  height: 325px;
-  width: 160px;
+  height: 365px;
+  width: 170px;
   object-fit: cover;
   object-position: -230px 100%;
   /* object-fit: contain; */
