@@ -227,10 +227,10 @@ header {
 }
 
 #circulo {
-  position: absolute;
+  position: relative;
   width: 40%;
   height: 40px;
-  top: 0px;
+  top: -40px;
   z-index: 1;
   background: #2FB464;
   border-radius: 100px;
@@ -398,7 +398,7 @@ header {
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  h1{
+  h1, h5{
     font-weight: 800;
     font-size: 46px;
     line-height: 56px;
@@ -432,16 +432,11 @@ header {
   }
   .presentation-content{
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-block: 25px;
-    padding-inline: 1em;
-    align-items: flex-start;
     background: url("../img/background.png") no-repeat center center fixed;
-
+    background-size: 100%;
     padding-block-end: 300px;
     padding-block-start: 150px;
-    padding-inline-start: 400px;
+    padding-inline-start: 30%;
   }
   .presentation-content p{
     margin-block: 1em;
@@ -465,23 +460,127 @@ header {
   }
   /* Fin de brands */
 
+  /* checkout */
+  .checkout-content, .purchase-content{
+    padding-inline-start: 30%;
+    padding-inline-end: 10%;
+
+  }
+  .checkout img{
+    padding-inline-start: 30%;
+  }
+  .checkout-content p{
+    margin-block-start: 1em;
+    margin-block-end: 200px;
+  }
+
+  .checkout-content{
+    background-color: white;
+  }
+  /* Fin de checkout */
+
+  /* .purchase */
+  .purchase-content{
+    background-size: 100%;
+    background: url("../img/background-white.png")  center ;
+  }
+  .purchase-content p{
+    margin-block-start: 1em;
+    margin-block-end: 300px;
+  }
+  /* fin de purchase */
+  /* track */
+  .track{
+  }
+  .track-content{
+    padding-inline-start: 30%;
+    padding-inline-end: 10%;
+  }
 
 
+  /* Fin de track */
+  /* formas */
+  .group-formas{
+  }
+
+  #circulo {
+    position: relative;
+    top: -40px;
+  }
+  #linea-blanca {
+    position: static;
+  }
+  /* Fin de formas */
+  /* login */
+  .login-content{
+    padding-inline-start: 40%;
+    padding-inline-end: 30%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-content img{
+    height: 370px;
+    width: 370px;
+  }
+
+  /* Fin de login */
+
+  /* folks */
+  .card-comment{
+    padding-inline-start: 10%;
+    padding-inline-end: 10%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .comment{
+    width: 40%;
+    height: 430px;
+  }
+  /* Fin de folks */
+
+  /* signup */
+  .signup-content{
+    padding-block: 64px;
+    padding-inline: 200px;
+  }
+  /* Fin de signup */
+  /* footer  */
+  .footer{
+  }
+  .footer-content{
+    padding-block-start: 200px;
+    padding-block-end: 100px;
+
+    margin-inline: 26%;
+    display: flex;
+    flex-direction: row;
+    gap: 128px;
+
+  }
+  .footer-social h5{
+    font-size: 24px;
+  }
+  /* Fin de footer  */
 
   /* celular */
   .main-content{
 
   }
   .celular{
-    bottom: 40px;
+    top: 180px;
     left: 5%;
   }
   .celular img{
     height: 570px;
   }
   .gif-video{
-    bottom: 120px;
-    left: 8%;
+    top: 260px;
+    left: 7%;
     /* left: 100px; */
   }
   .gif-video img{
