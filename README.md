@@ -1,4 +1,5 @@
-# Web Portfolio - Gwen Stacy
+# Web Project - Faster
+Solution for a project from [LeonidasEsteban.com](https://leonidasesteban.com/proyectos)
 
 <div align="center">
   <h3>
@@ -20,5 +21,3 @@
 
 ![screenshot-faster](/img/frame.jpg)
 
-
-Solution for a project from [LeonidasEsteban.com](https://leonidasesteban.com/proyectos)
