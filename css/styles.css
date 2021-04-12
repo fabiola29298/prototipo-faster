@@ -365,35 +365,6 @@ header {
 }
 /* Fin de footer  */
 
-/* celular */
-.hero{
-  z-index: 5;
-}
-.ruta-cel{
-  /* border: 1px solid red; */
-  position: relative;
-}
-.group-cel{
-  /* border: 1px solid blue; */
-  position: absolute;
-  align-content: center;
-  height: 85%;
-}
-.celular{
-  position: fixed;
-  z-index: 3;
-  bottom: -200px;
-  left: 25%;
-}
-.celular img{
-  height: 420px;
-
-}
-.folks-content{
-  z-index: 5;
-}
-
-/* Fin de celular */
 
 
 /* Desktop Styles */
@@ -568,26 +539,66 @@ header {
     font-size: 24px;
   }
   /* Fin de footer  */
+
+
   /* celular */
-  .ruta-cel{
-    /* border: 1px solid resd; */
+  .main-content{
     /* position: relative; */
+
+  }
+  .ruta-celular{
+     /* border: 1px solid red; */
+    /* position: absolute; */
   }
   .group-cel{
     /* border: 1px solid blue; */
     position: absolute;
-    margin-inline-start: 16px;
     height: 85%;
   }
   .celular{
     position: sticky;
-    z-index: 1;
+    z-index: 2;
     bottom: -50px;
     left: 25%;
+    top: 180px;
+    left: 5%;
   }
   .celular img{
-    height: 520px;
+    /* height: 420px; */
+    height: 570px;
+  }
   /* Fin de celular */
+}
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  /* celular */
+  .main-content{
+    /* position: relative; */
 
+  }
+  .ruta-celular{
+     /* border: 1px solid red; */
+    /* position: absolute; */
+  }
+  .group-cel{
+    /* border: 1px solid blue; */
+    /* position: absolute; */
+    height: 85%;
+    display: flex;
+    justify-content: center;
+  }
+  .celular{
+    position: fixed;
+    z-index: 2;
+    bottom: -210px;
+    /* top: 180px; */
+    /* left: 5%; */
+  }
+  .celular img{
+    height: 420px;
+  }
+  /* Fin de celular */
+  #folks{
+    /* z-index: 10; */
   }
 }
