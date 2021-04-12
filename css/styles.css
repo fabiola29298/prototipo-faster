@@ -364,36 +364,7 @@ header {
   margin-block-start:1em;
 }
 /* Fin de footer  */
-/* celular */
-.main-content{
-  position: relative;
 
-}
-.celular{
-  position: fixed;
-  z-index: 2;
-  bottom: -50px;
-  left: 25%;
-}
-.celular img{
-  height: 420px;
-}
-.gif-video{
-  position: fixed;
-  z-index: 2;
-  bottom: -50px;
-  left: 32%;
-  /* left: 100px; */
-}
-.gif-video img{
-  height: 365px;
-  width: 170px;
-  object-fit: cover;
-  object-position: -230px 100%;
-  /* object-fit: contain; */
-  /* https://www.w3schools.com/css/css3_object-fit.asp */
-}
-/* Fin de celular */
 
 
 /* Desktop Styles */
@@ -567,25 +538,65 @@ header {
   }
   /* Fin de footer  */
 
+
   /* celular */
   .main-content{
+    /* position: relative; */
 
   }
+  .ruta-celular{
+     /* border: 1px solid red; */
+    /* position: absolute; */
+  }
+  .group-cel{
+    /* border: 1px solid blue; */
+    position: absolute;
+    height: 85%;
+  }
   .celular{
+    position: sticky;
+    z-index: 2;
+    bottom: -50px;
+    left: 25%;
     top: 180px;
     left: 5%;
   }
   .celular img{
+    /* height: 420px; */
     height: 570px;
   }
-  .gif-video{
-    top: 260px;
-    left: 7%;
-    /* left: 100px; */
-  }
-  .gif-video img{
-    height: 405px;
-    width: 230px;
-    object-position: -230px 100%; }
   /* Fin de celular */
+}
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  /* celular */
+  .main-content{
+    /* position: relative; */
+
+  }
+  .ruta-celular{
+     /* border: 1px solid red; */
+    /* position: absolute; */
+  }
+  .group-cel{
+    /* border: 1px solid blue; */
+    /* position: absolute; */
+    height: 85%;
+    display: flex;
+    justify-content: center;
+  }
+  .celular{
+    position: fixed;
+    z-index: 2;
+    bottom: -210px;
+    /* top: 180px; */
+    /* left: 5%; */
+  }
+  .celular img{
+    height: 420px;
+  }
+  /* Fin de celular */
+  #folks{
+    /* z-index: 10; */
+  }
 }
