@@ -92,7 +92,7 @@ a{
 }
 /* Menu */
 .hero {
-  /* position: sticky; */
+  position: sticky;
   top: 0;
   z-index: 1;
 }
@@ -364,35 +364,35 @@ header {
   margin-block-start:1em;
 }
 /* Fin de footer  */
-/* celular */
-.main-content{
-  position: relative;
 
+/* celular */
+.hero{
+  z-index: 5;
+}
+.ruta-cel{
+  /* border: 1px solid red; */
+  position: relative;
+}
+.group-cel{
+  /* border: 1px solid blue; */
+  position: absolute;
+  align-content: center;
+  height: 85%;
 }
 .celular{
   position: fixed;
-  z-index: 2;
-  bottom: -50px;
+  z-index: 3;
+  bottom: -200px;
   left: 25%;
 }
 .celular img{
   height: 420px;
+
 }
-.gif-video{
-  position: fixed;
-  z-index: 2;
-  bottom: -50px;
-  left: 32%;
-  /* left: 100px; */
+.folks-content{
+  z-index: 5;
 }
-.gif-video img{
-  height: 365px;
-  width: 170px;
-  object-fit: cover;
-  object-position: -230px 100%;
-  /* object-fit: contain; */
-  /* https://www.w3schools.com/css/css3_object-fit.asp */
-}
+
 /* Fin de celular */
 
 
@@ -404,7 +404,9 @@ header {
     line-height: 56px;
     letter-spacing: 0.01em;
   }
-
+  .hero{
+    z-index: 3;
+  }
   .wrapper {
     max-inline-size: 100%;
     margin: auto;
@@ -433,7 +435,7 @@ header {
   .presentation-content{
     width: 100%;
     background: url("../img/background.png") no-repeat center center fixed;
-    background-size: 100%;
+    /* background-size: 100%; */
     padding-block-end: 300px;
     padding-block-start: 150px;
     padding-inline-start: 30%;
@@ -566,26 +568,26 @@ header {
     font-size: 24px;
   }
   /* Fin de footer  */
-
   /* celular */
-  .main-content{
-
+  .ruta-cel{
+    /* border: 1px solid resd; */
+    /* position: relative; */
+  }
+  .group-cel{
+    /* border: 1px solid blue; */
+    position: absolute;
+    margin-inline-start: 16px;
+    height: 85%;
   }
   .celular{
-    top: 180px;
-    left: 5%;
+    position: sticky;
+    z-index: 1;
+    bottom: -50px;
+    left: 25%;
   }
   .celular img{
-    height: 570px;
-  }
-  .gif-video{
-    top: 260px;
-    left: 7%;
-    /* left: 100px; */
-  }
-  .gif-video img{
-    height: 405px;
-    width: 230px;
-    object-position: -230px 100%; }
+    height: 520px;
   /* Fin de celular */
+
+  }
 }
