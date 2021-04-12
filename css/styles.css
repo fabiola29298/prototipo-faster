@@ -553,7 +553,7 @@ header {
   .group-cel{
     /* border: 1px solid blue; */
     position: absolute;
-    height: 85%;
+    height: 90%;
   }
   .celular{
     position: sticky;
